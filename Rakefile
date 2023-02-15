@@ -36,7 +36,7 @@ end
 
 # Publish the gem
 task publish: [:build] do
-  sh format('gem push ./%s', gem_name)
+  sh format('gem push build/%s', gem_name)
 end
 
 # Run all the checks
